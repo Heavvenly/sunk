@@ -1,0 +1,109 @@
+
+/* Initial hidden and blurry states */
+.section p {
+    opacity: 0;
+    filter: blur(15px);
+    transform: translateY(30px);
+    transition: opacity .5s ease, filter 1s ease, transform 01s ease;
+}
+
+.section p.visible {
+    opacity: 1;
+    filter: blur(0);
+    transform: translateY(0);
+}
+
+/* Add padding to the conclusion for extra scroll */
+#conclusion {
+    margin-top: 100vh;
+}
+body {
+    font-family: Arial, sans-serif;
+    line-height: 2;
+    margin: 200px;
+    color: rgb(243,243,243);
+    font-size: 30px;
+    animation: colorFade 5s;
+    background-color: rgb(33,40,48);
+}
+@keyframes colorFade {
+
+  0% {
+    background-color: #111730;
+  }
+
+  100% {
+    background-color: rgb(33,40,48);
+  }
+}
+h1{
+  font-size: 80px;
+  font-family: "Spectral", serif;
+}
+h2 {
+    font-family: "Times New Roman", Times, serif;
+}
+
+.title {
+  font-family: "Spectral", serif;
+  font-weight: bolder;
+  text-align: center;
+  opacity: 0;
+  font-size: 100px;
+  transform: translateY(-500px);
+  animation: dustIn 4s ease-out forwards;
+}
+/* Keyframes for the dust effect */
+@keyframes dustIn {
+  0% {
+    opacity: 0;
+    transform: translateY(-500px);
+    filter: blur(15px);
+    text-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
+  }
+  50% {
+    opacity: 0.5;
+    transform: translateY(20px);
+    filter: blur(5px);
+    text-shadow: 0 0 20px rgba(255, 255, 255, 0.3);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+    filter: blur(0);
+    text-shadow: none;
+  }
+}
+.section {
+    margin: 20px 0;
+
+}
+
+.mariner {
+    font-family: "Times New Roman", Times, serif;
+    color: rgb(243,243,243);
+}
+.frankenstein {
+    font-family: "Spectral", serif;
+    font-style: italic;
+    color: rgb(243,243,243);
+}
+#part1{
+  text-align: left;
+}
+#part2{
+  text-align: right;
+}
+#part3{
+  text-align: left;
+}
+
+#tabbed{
+  padding-left: 50px;
+}
+.quote {
+    margin-left: 20px;
+    font-family: "Spectral", serif;
+    font-style: italic;
+    text-align: center;
+}
