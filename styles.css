@@ -61,8 +61,8 @@ h2 {
   text-align: center;
   opacity: 0;
   font-size: 100px;
-  transform: translateY(-500px);
-  animation: dustIn 4s ease-out forwards;
+  transform: translateY(-400px);
+  animation: dustIn 3s ease-out forwards;
 }
 
 /* Keyframes for the dust effect */
@@ -103,7 +103,10 @@ h2 {
   font-family: "Times New Roman", Times, serif;
   color: rgb(243, 243, 243);
 }
-
+a {
+  font-family: "Times New Roman", Times, serif;
+  color: rgb(243, 243, 243);
+}
 .frankenstein {
   font-family: "Spectral", serif;
   font-style: italic;
