@@ -91,13 +91,13 @@ h2 {
 
 .section {
   margin: 20px 0;
+  padding-top: 100px;
 }
 
-.intro {
-  font-family: "Times New Roman", Times, serif;
-  color: rgb(243, 243, 243);
-  text-align: center;
+#part1{
+  padding-top: 150px;
 }
+
 
 .mariner {
   font-family: "Times New Roman", Times, serif;
@@ -113,23 +113,9 @@ a {
   color: rgb(243, 243, 243);
 }
 
-#part1 {
-  text-align: left;
-}
-
-#part2 {
-  text-align: right;
-}
-
-#part3 {
-  text-align: left;
-}
-
-#tabbed {
-  padding-left: 50px;
-}
 
 .quote {
+  margin-top: 80px;
   margin-left: 20px;
   font-family: "Spectral", serif;
   font-style: italic;
