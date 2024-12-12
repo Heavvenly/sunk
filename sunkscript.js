@@ -9,15 +9,26 @@ document.addEventListener("scroll", () => {
     }
   });
 });
+document.addEventListener("scroll", () => {
+  const conclusion = document.getElementById("conclusion");
+  const windowHeight = window.innerHeight;
+
+  if (conclusion.getBoundingClientRect().top < windowHeight * .5) {
+    conclusion.classList.add("visible");
+  }
+});
 document.addEventListener("DOMContentLoaded", () => {
+    const title = document.querySelector('.title');
+    if (title) {
+        title.scrollIntoView({ behavior: "smooth" });
+    }
+
     const reloadButton = document.getElementById("reload-button");
     if (reloadButton) {
         reloadButton.addEventListener("click", () => {
-            window.scrollTo({ top: 0, behavior: "smooth" }); // Scroll to top smoothly
-            setTimeout(() => {
-                console.log("Page is about to reload"); // Log before reload
-                location.reload();
-            }, 800);
+          location.reload();
+
+            
         });
     } else {
         console.error("Reload button not found!");
